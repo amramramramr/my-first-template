@@ -52,22 +52,22 @@ header .container a.logo {
     cursor: pointer;
 }
 
-header .container nav ul {
+header .container nav>ul {
     display: flex;
 }
 
-header .container nav ul>li {
+header .container nav>ul>li {
     margin-right: 20px;
 }
 
-header .container nav ul>li>a {
+header .container nav>ul>li>a {
     text-transform: capitalize;
     font-size: .3em;
     font-weight: 600;
     position: relative;
 }
 
-header .container nav ul>li>a::before {
+header .container nav>ul>li>a:before {
     content: "";
     position: absolute;
     background: #eee;
@@ -82,14 +82,101 @@ header .container nav ul>li>a::before {
     left: 0;
 }
 
-header .container nav ul>li>a:hover::before {
+header .container nav>ul>li>a:hover::before {
     width: 100%;
 }
 
-header .container nav ul li {
+header .container nav>ul>li:last-child:hover .mega-menu {
+    opacity: 1;
+}
+
+header .container nav>ul>li {
     display: flex;
     align-items: center;
     align-self: stretch;
+    /* position: relative; */
+}
+
+header .mega-menu {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 10;
+    top: 100%;
+    left: 0;
+    background-color: #d9e3d9;
+    width: 100%;
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    -ms-transition: all ease .5s;
+    -o-transition: all ease .5s;
+    opacity: 0;
+    height: 250px;
+}
+
+header .mega-menu .img {
+    display: flex;
+}
+
+header .mega-menu .img img {
+    /* display: flex; */
+}
+
+header .mega-menu .links1,
+header .mega-menu .links2 {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+header .mega-menu .links1>ul,
+header .mega-menu .links2>ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+}
+
+header .mega-menu .links1>ul>li,
+header .mega-menu .links2>ul>li {
+    /* margin: -32px; */
+    /* cursor: pointer
+    ; */
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+header .mega-menu .links1>ul>li>a,
+header .mega-menu .links2>ul>li>a {
+    text-transform: capitalize;
+    font-size: 20px;
+    width: 100%;
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    -ms-transition: all ease .5s;
+    -o-transition: all ease .5s;
+    text-align: center;
+    align-items: center;
+}
+
+header .mega-menu .links1>ul>li>a:hover,
+header .mega-menu .links2>ul>li>a:hover {
+    background-color: lightgreen;
+}
+
+header .mega-menu .links1>ul>li>a,
+header .mega-menu .links2>ul>li>a {
+    font-size: .35em;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 .landing {
