@@ -341,7 +341,10 @@ header .mega-menu .links2>ul>li>a {
 .gallery h2,
 .features h2,
 .testimonials h2,
-.team h2 {
+.team h2,
+.services h2,
+.skills h2,
+.how-it-works h2 {
     letter-spacing: 2px;
     border: 1px solid #000;
     padding: 10px;
@@ -419,7 +422,10 @@ header .mega-menu .links2>ul>li>a {
 .gallery h2:hover,
 .features h2:hover,
 .testimonials h2:hover,
-.team h2:hover {
+.team h2:hover,
+.services h2:hover,
+.skills h2:hover,
+.how-it-works h2:hover {
     animation: change .5s linear forwards;
     -webkit-animation: change .5s linear forwards;
     animation-delay: .5s;
@@ -437,7 +443,10 @@ header .mega-menu .links2>ul>li>a {
 .articles h2::before,
 .features h2::before,
 .testimonials h2::before,
-.team h2::before {
+.team h2::before,
+.services h2::before,
+.skills h2::before,
+.how-it-works h2::before {
     content: "";
     position: absolute;
     width: 12px;
@@ -450,10 +459,10 @@ header .mega-menu .links2>ul>li>a {
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     border-radius: 50%;
-    -webkit-border-radius: ;
-    -moz-border-radius: ;
-    -ms-border-radius: ;
-    -o-border-radius: ;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
     left: 110%;
     z-index: -1;
 }
@@ -462,7 +471,10 @@ header .mega-menu .links2>ul>li>a {
 .gallery h2::after,
 .features h2::after,
 .testimonials h2::after,
-.team h2::after {
+.team h2::after,
+.services h2::after,
+.skills h2::after,
+.how-it-works h2::after {
     content: "";
     position: absolute;
     width: 12px;
@@ -486,7 +498,10 @@ header .mega-menu .links2>ul>li>a {
 .articles h2:hover::after,
 .features h2:hover::after,
 .testimonials h2:hover::after,
-.team h2:hover::after {
+.team h2:hover::after,
+.services h2:hover::after,
+.skills h2:hover::after,
+.how-it-works h2:hover::after {
     animation: move-right .5s linear forwards;
     -webkit-animation: move-right .5s linear forwards;
 }
@@ -502,17 +517,20 @@ header .mega-menu .links2>ul>li>a {
         width: 100%;
         height: 100%;
         border-radius: 0%;
-        -webkit-border-radius: 0%;
-        -moz-border-radius: 0%;
-        -ms-border-radius: 0%;
-        -o-border-radius: 0%;
+        -webkit-border-radius: ;
+        -moz-border-radius: ;
+        -ms-border-radius: ;
+        -o-border-radius: ;
     }
 }
 
 .articles h2:hover::before,
 .features h2:hover::before,
 .testimonials h2:hover::before,
-.team h2:hover::before {
+.team h2:hover::before,
+.services h2:hover::before,
+.skills h2:hover::before,
+.how-it-works h2:hover::before {
     animation: move-left .5s linear forwards;
     -webkit-animation: move-left .5s linear forwards;
 }
@@ -528,17 +546,20 @@ header .mega-menu .links2>ul>li>a {
         width: 100%;
         height: 100%;
         border-radius: 0%;
-        -webkit-border-radius: 0%;
-        -moz-border-radius: 0%;
-        -ms-border-radius: 0%;
-        -o-border-radius: 0%;
+        -webkit-border-radius: ;
+        -moz-border-radius: ;
+        -ms-border-radius: ;
+        -o-border-radius: ;
     }
 }
 
 .gallery h2:hover::after,
 .features h2:hover::after,
 .testimonials h2:hover::after,
-.team h2:hover::after {
+.team h2:hover::after,
+.services h2:hover::after,
+.skills h2:hover::after,
+.how-it-works h2:hover::after {
     animation: move-right .5s linear forwards;
     -webkit-animation: move-right .5s linear forwards;
 }
@@ -546,7 +567,10 @@ header .mega-menu .links2>ul>li>a {
 .gallery h2:hover::before,
 .features h2:hover::before,
 .testimonials h2:hover::before,
-.team h2:hover::before {
+.team h2:hover::before,
+.services h2:hover::before,
+.skills h2:hover::before,
+.how-it-works h2:hover::before {
     animation: move-left .5s linear forwards;
     -webkit-animation: move-left .5s linear forwards;
 }
@@ -833,4 +857,255 @@ header .mega-menu .links2>ul>li>a {
 .team .container .box .info {
     display: flex;
     flex-direction: column;
+}
+
+.services {
+    padding-top: 20px;
+}
+
+.services .container {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.services .container .box {
+    width: 27%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3), 0px 4px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    -ms-transition: all ease .5s;
+    -o-transition: all ease .5s;
+}
+
+.services .container .box::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    height: 5px;
+    width: 0;
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    -ms-transition: all ease .5s;
+    -o-transition: all ease .5s;
+    background-color: orange;
+}
+
+.services .container .box:hover::before {
+    width: 100%;
+}
+
+.services .container .box:hover {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+
+.services .container .box i {
+    font-size: 30px;
+    margin: 30px auto;
+    text-align: center;
+    width: 100%;
+}
+
+.services .container .box h3 {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.services .container .box .info {
+    padding: 15px;
+    background-color: #d9e3d9;
+    position: relative;
+    text-align: right;
+}
+
+.services .container .box .info:before {
+    position: absolute;
+    content: "0";
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background: lightseagreen;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .container .box .info:after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 15%;
+    width: 10%;
+    height: 100%;
+    background: rgb(76, 85, 84);
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: skewX(7deg);
+    -webkit-transform: skewX(7deg);
+    -moz-transform: skewX(7deg);
+    -ms-transform: skewX(7deg);
+    -o-transform: skewX(7deg);
+}
+
+.services .container .box .info a {
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.skills {
+    padding-top: 20px;
+}
+
+.skills .container {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.skills .container .img {
+    display: flex;
+    flex-grow: 1;
+    padding: 30px;
+}
+
+.skills .container .img img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.skills .container .skills2 {
+    display: flex;
+    flex-grow: 5;
+    align-self: stretch;
+}
+
+.skills .container .skills2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skills .container .skills2 .single-skill .data {
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+
+.skills .container .skills2 .single-skill .progress {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.skills .container .skills2 .single-skill .progress::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: green;
+}
+
+.skills .container .skills2 .single-skill:first-child .progress::before {
+    width: 20%;
+}
+
+.skills .container .skills2 .single-skill:nth-child(2) .progress::before {
+    width: 40%;
+}
+
+.skills .container .skills2 .single-skill:nth-child(3) .progress::before {
+    width: 80%;
+}
+
+.skills .container .skills2 .single-skill:last-child .progress::before {
+    width: 50%;
+}
+
+.how-it-works {
+    padding-top: 20px;
+}
+
+.how-it-works .container {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.how-it-works .container .img {
+    display: flex;
+    flex-grow: 1;
+    /* height: 300px; */
+}
+
+.how-it-works .container .img img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.how-it-works .container .data {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 4;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 100px;
+}
+
+.how-it-works .container .data .single-data {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px
+}
+
+.how-it-works .container .data .single-data img {
+    width: 100px;
+    height: 100px;
+}
+
+.how-it-works .container .data .single-data .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 30px;
+}
+
+.footer {
+    padding: 100px;
+    background-color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
